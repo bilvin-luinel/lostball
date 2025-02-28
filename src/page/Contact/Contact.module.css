@@ -55,7 +55,7 @@
     z-index: 2;
     position: relative;
     margin-top: -10vw;
-    padding: 80px 3.8% 120px;
+    padding: 80px 20% 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -70,8 +70,8 @@
 }
 
 .lv2_right {
-    width: 50%;
-    aspect-ratio: 1/0.72;
+    width: 40%;
+    aspect-ratio: 1/0.7;
     border: 2px solid #53b635;
     /* border: 3px solid #D1D63B; */
     border-radius: 15px;
@@ -92,15 +92,24 @@
     font-weight: 800;
 }
 
-.lv2_left>img {
+.lv2_left_icon>img {
     margin-top: 50px;
     width: 60px;
     cursor: pointer;
+    margin-right: 10px;
+}
+
+.lv2_left_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .only_m {
     height: 30px;
 }
+
 
 /* 모바일 */
 @media (max-width: 639px) {

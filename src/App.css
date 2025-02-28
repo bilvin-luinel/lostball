@@ -95,11 +95,11 @@ body {
 }
 
 ::selection {
-  background-color: #FFC000;
+  background-color: #ff0000;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #FFC000;
+  background-color: #ff0000;
   color: white;
 }
