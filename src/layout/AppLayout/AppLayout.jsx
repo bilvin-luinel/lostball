@@ -67,9 +67,9 @@ const AppLayout = () => {
                     <div className={styles.menu_wrap}>
                         <p onClick={() => window.location.href = '/'}>Home</p>
                         <p onClick={() => window.location.href = '/about-us'}>About Us</p>
-                        <p onClick={() => window.location.href = '/products'}>Product</p>
+                        {/* <p onClick={() => window.location.href = '/products'}>Product</p> */}
                         <p onClick={() => window.location.href = '/contact'}>Contact</p>
-                        <p onClick={() => window.location.href = '/inquiry'}>Inquiry</p>
+                        {/* <p onClick={() => window.location.href = '/inquiry'}>Inquiry</p> */}
                     </div>
 
                 </div>
@@ -81,9 +81,9 @@ const AppLayout = () => {
             {isMobileMenu && (
                 <div className={`${styles.m_menu} ${isTransNav && styles.transNav}`}>
                     <p onClick={() => window.location.href = '/about-us'}>About Us</p>
-                    <p onClick={() => window.location.href = '/products'}>Product</p>
+                    {/* <p onClick={() => window.location.href = '/products'}>Product</p> */}
                     <p onClick={() => window.location.href = '/contact'}>Contact</p>
-                    <p onClick={() => window.location.href = '/inquiry'}>Inquiry</p>
+                    {/* <p onClick={() => window.location.href = '/inquiry'}>Inquiry</p> */}
                 </div>
             )}
 
