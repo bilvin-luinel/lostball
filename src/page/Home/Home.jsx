@@ -254,43 +254,46 @@ const Home = () => {
                         />
                     ))}
                 </div>
-                <h2>Respecting Your Passion,<br />Respecting Your Vision</h2>
+                {/* <h2>유토피아 로스트볼은<br />최고의 품질,최고의 서비스를 제공합니다.</h2> */}
             </div>
             <div className={ss.lv2}>
-                <h2>We Export Industrial Excellence</h2>
-                <p>Check out for what we can do for you.</p>
+                <h2>저희는 비재생 로스트볼만을 취급합니다</h2>
+                <p>정확한 상품, 제대로 된 품질의 상품.</p>
                 <div className={ss.lv2_img_wrap}>
                     <div onMouseEnter={() => setHoveredIndex(0)} onMouseLeave={() => setHoveredIndex(null)}>
                         <img
                             ref={el => lv2Refs.current[0] = el}
                             style={{ transform: `scale(${hoveredIndex === 0 ? 1.1 : lv2Scales[0]})` }}
-                            src={img_lv2_1}
+                            src='https://ecimg.cafe24img.com/pg403b04812162082/crisiongolf/web/product/big/20240807/b0e46475bf438e549ddd0868d41339a9.jpg'
+                            // src={img_lv2_1}
                             alt=''
                         />
-                        <h3>Global Network<br />Expertise</h3>
-                        <p>We provide fast and efficient<br />exporting services<br />with a global network and<br />deep market knowledge.</p>
+                        <h3>로스트볼</h3>
+                        <p>판매자가 직접 등급 분류 작업으로<br />정확한 등급대로 분류합니다.<br />제대로 된 품질의 로스트볼,<br />제대로 된 친절한 서비스 제공할 것을 약속합니다.</p>
                     </div>
                     <div onMouseEnter={() => setHoveredIndex(1)} onMouseLeave={() => setHoveredIndex(null)}>
                         <img
                             ref={el => lv2Refs.current[1] = el}
                             style={{ transform: `scale(${hoveredIndex === 1 ? 1.1 : lv2Scales[1]})` }}
-                            src={img_lv2_2}
+                            src='https://mblogthumb-phinf.pstatic.net/MjAyMzA2MDRfMjcx/MDAxNjg1ODQ3ODQzMzMx.sVBnMV9cTmcwtx7E10vNP36eXrGRcmJTrTo-T7Wj_5Qg.geJUC1yAQ81kHR8mIDvrKDrRN57PAsYpN6kOImRe2log.PNG.golf79s177/20230604120307.png?type=w800'
+                            // src={img_lv2_2}
                             alt=''
                         />
-                        <h3>Quality Assurance</h3>
-                        <p>Our strict quality control procedures<br />ensure that we exceed<br />customer expectations with every<br />product we carry.</p>
+                        <h3>국제공인구 다이아윙스</h3>
+                        <p>고반발 국제공인구 다이아윙스는<br />압도적 비거리 증가가 가능하며<br />미국 USGA,<br />영국 R&A 인증을 받은 증명된 골프공입니다.</p>
                     </div>
                     <div onMouseEnter={() => setHoveredIndex(2)} onMouseLeave={() => setHoveredIndex(null)}>
                         <img
                             ref={el => lv2Refs.current[2] = el}
                             style={{ transform: `scale(${hoveredIndex === 2 ? 1.1 : lv2Scales[2]})` }}
-                            src={img_lv2_3}
+                            src='https://webimage.10x10.co.kr/image/basic600/410/B004107219.jpg'
+                            // src={img_lv2_3}
                             alt=''
                         />
-                        <h3>Customized<br />Solutions</h3>
-                        <p>We assist our clients by offering<br />comprehensive customized services,<br />ensuring their products stand out in<br />the market.</p>
+                        <h3>GD11 화장품</h3>
+                        <p>국제 특허기술과 인체제대혈세포배양액<br />눈에 보이는 리얼한 효과를 피부에 선사합니다.<br />GD11만의 독자기술로 만들어진<br />인체제대혈세포배양액을 소개합니다.</p>
                     </div>
-                    <div onMouseEnter={() => setHoveredIndex(3)} onMouseLeave={() => setHoveredIndex(null)}>
+                    {/* <div onMouseEnter={() => setHoveredIndex(3)} onMouseLeave={() => setHoveredIndex(null)}>
                         <img
                             ref={el => lv2Refs.current[3] = el}
                             style={{ transform: `scale(${hoveredIndex === 3 ? 1.1 : lv2Scales[3]})` }}
@@ -299,14 +302,14 @@ const Home = () => {
                         />
                         <h3>Reliable<br />Communication</h3>
                         <p>We strive to build lasting<br />partnerships, dedicated to<br />supporting the growth and<br />success of your business.</p>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div className={ss.lv2_img_wrap}></div> */}
             </div>
             <div className={ss.lv5}>
                 <div className={ss.lv5_description_wrap}>
-                    <h2>All Process</h2>
-                    <p>We guarantee the manufacturing process and quality of our products.</p>
+                    <h2>고르고</h2>
+                    <p>국내 300여개 다양한 휴양시설을 온라인보다 더 저렴하게 이용할 수 있도록 국내 숙박 기업복지 사이트를 오픈합니다.</p>
                 </div>
                 <div className={ss.lv5_img_wrap}>
                     <div ref={containerRef} onMouseEnter={() => setHoveredIndex(4)} onMouseLeave={() => setHoveredIndex(null)}>

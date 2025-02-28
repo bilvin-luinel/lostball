@@ -98,6 +98,10 @@
     font-size: 2.8vw;
     font-family: 'Montserrat' !important;
     font-weight: 800;
+    background: linear-gradient(to right, #a3a7f2, #69cbf9, #71e4bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .lv2>p {
@@ -113,7 +117,8 @@
 }
 
 .lv2_img_wrap>div {
-    width: 24%;
+    width: 30%;
+    /* width: 24%; */
     aspect-ratio: 1/0.87;
     position: relative;
     overflow: hidden;
@@ -138,6 +143,8 @@
     white-space: nowrap;
     font-family: 'Montserrat' !important;
     font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8),
+                 0 0 8px rgba(0,0,0,0.5);
 }
 
 .lv2_img_wrap>div>p {
@@ -150,6 +157,8 @@
     color: white;
     font-family: 'Montserrat' !important;
     font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8),
+    0 0 8px rgba(0,0,0,0.5);
 }
 
 .lv3 {
