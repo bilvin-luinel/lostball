@@ -1,0 +1,195 @@
+.wrap {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1180px;
+    min-height: 600px;
+    padding: 40px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.map_wrap {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+}
+
+.item_wrap {
+    width: 250px;
+    margin: 30px 0;
+}
+
+.item_wrap>img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.item_btn_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.basic_buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.item_btn_wrap p {
+    padding: 6px 12px;
+    border: 1px solid var(--main-red);
+    border-radius: 5px;
+    color: var(--main-red);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.home_notice_btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.item_btn_wrap p:hover {
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+.item_btn_wrap p.active {
+    background-color: var(--main-red);
+    color: white;
+}
+
+.modal_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'ms-bk';
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-family: 'ms-re';
+}
+
+.form_group input[type="text"],
+.form_group input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form_group input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.form_group input[type="number"]:focus {
+    border-color: var(--main-red);
+    outline: none;
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox_label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.modal_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal_buttons button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'ms-re';
+}
+
+.modal_buttons button:first-child {
+    background-color: var(--main-red);
+    color: white;
+}
+
+.modal_buttons button:last-child {
+    background-color: #ddd;
+    color: #333;
+}
+
+.notice_buttons {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.notice_btn {
+    flex: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .map_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .item_wrap {
+        width: 100%;
+        margin: 0;
+    }
+
+    .item_wrap>img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,120 @@
+.wrap {
+    width: 100%;
+    aspect-ratio: 1/0.628;
+    background-color: var(--main-gray);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.wrap * {
+    font-family: 'lb-re' !important;
+}
+
+.lv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.lv1>h3 {
+    color: var(--text-gray);
+    font-family: 'Montserrat' !important;
+}
+
+.lv1>p {
+    color: var(--main-red);
+    border: 1px solid var(--main-red);
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrap>h2 {
+    font-size: 28px;
+    color: black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DDD5D5;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat' !important;
+    font-weight: 800;
+}
+
+.lv2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+
+.lv2>img {
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.lv2>div {
+    width: 55%;
+}
+.lv2_body {
+    display: flex;
+    flex-direction: column;
+}
+.lv2_body>p {
+    color: #606060;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.lv2_body>span {
+    color: #606060;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.icon_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 0 25px;
+}
+
+.icon_wrap>div {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+.icon_wrap>div>span {
+    font-size: 14px;
+    text-align: center;
+}
+
+.lv1>p:hover{
+    background-color: var(--main-red);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        padding: 5%;
+    }
+    .lv2{
+        flex-direction: column;
+    }
+    .lv2>img {
+        width: 100%;
+    }
+    .lv2>div {
+        width: 100%;
+    }
+    .lv2_body {
+        margin-top: 20px;
+    }
+}

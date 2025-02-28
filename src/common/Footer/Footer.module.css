@@ -1,0 +1,110 @@
+* {
+    font-family: 'lb-re' !important;
+}
+
+.wrap * {
+    color: gray;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--main-back);
+}
+
+.logo {
+    width: 200px;
+    margin-top: 40px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 50px;
+}
+
+.body>p {
+    text-align: left;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.body>p span {
+    white-space: nowrap;
+}
+
+.body>p:nth-child(4) {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+
+.body>p:nth-child(5) {
+    font-size: 14px;
+}
+
+.empty {
+    width: 200px;
+}
+
+
+/* Mobile */
+@media (max-width: 639px) {
+    .wrap {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .body {
+        margin: 0;
+    }
+
+    .body>p {
+        font-size: 14px;
+        gap: 4px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .only_pc {
+        display: none;
+    }
+}
+
+/* PC */
+@media (min-width: 640px) {}
+
+/* 줄바꿈 관련 */
+@media (min-width: 1024px) {
+    .only_m {
+        display: none;
+    }
+}
+
+.lato {
+    font-family: 'Lato' !important;
+    font-weight: 600;
+    font-style: italic;
+}

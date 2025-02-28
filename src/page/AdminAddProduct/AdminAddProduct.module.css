@@ -1,0 +1,228 @@
+.wrap {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1180px;
+    min-height: 600px;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.img_div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.additional_img_wrap {
+    display: flex;
+    align-items: center;
+}
+.explain {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 5px 0;
+}
+.input {
+    width: 350px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.input:focus {
+    outline: 1px solid var(--main-red);
+    border-color: var(--main-red);
+}
+.submit_btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--main-red);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.img_del_btn {
+    border: 1px solid red;
+    width: fit-content;
+    margin: 5px auto 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+.content_input_text {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.content>input {
+    margin: 5px 10px;
+}
+.content>input:focus {
+    outline: 1px solid var(--main-red);
+    border-color: var(--main-red);
+}
+.content_input_check {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+}
+.addContent_btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    margin: 10px 0 20px 0;
+}
+.imgBody_wrap {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.imgBody_wrap>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.notice_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.notice_content input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.notice_content input:focus {
+    outline: 1px solid var(--main-red);
+    border-color: var(--main-red);
+}
+
+.additional_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.info_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info_item label {
+    font-weight: bold;
+    color: #666;
+    font-size: 14px;
+}
+
+.info_item textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info_item textarea:focus {
+    outline: 1px solid var(--main-red);
+    border-color: var(--main-red);
+}
+
+.certificate_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.certificate_item {
+    position: relative;
+}
+
+.certificate_item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.input select {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input select:focus {
+    outline: none;
+    border-color: var(--main-red);
+    box-shadow: 0 0 0 2px rgba(255,79,79,0.1);
+}
+
+.applications_wrap {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+.applications_wrap label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.applications_wrap input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.applications_wrap img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
